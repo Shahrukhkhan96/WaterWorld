@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Water World</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Archivo+Narrow:400,700" rel="stylesheet" type="text/css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+#footer #fbox1 .style1 .first {
+	color: #CCCCCC;
+}
+#footer #fbox3 p {
+	color: #CCC;
+}
+</style>
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo"><h1>WATER WORLD</h1></div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>           
+			<li><a href="about.html">About</a></li>
+			<li><a href="parkInformation1.html">Park Information</a></li>
+			<li><a href="ridesNslides.html" accesskey="4" title="">Rides and Slides</a></li>
+            <li><a href="gallery.html" accesskey="1" title="">Gallery</a></li>
+			<li><a href="FoodZone.html" accesskey="2" title="">Food Zone</a></li>
+			<li><a href="facilities.html" accesskey="3" title="">Facilities</a></li>
+			<li class="active"><a href="LocationMap.html" accesskey="4" title="">Location Map</a></li>
+            <li><a href="Contact.html" accesskey="4" title="">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<div id="banner" class="container">
+	<div id="slider">
+		<div class="viewer">
+			<div class="reel">
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+				<div class="slide"> <a class="link" href="#">Full story ...</a> <img src="images/pic02.jpg" alt="" /> </div>
+			</div>
+		</div>
+		<div class="indicator">
+			<ul>
+				<li class="active">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('#slider').slidertron({
+			viewerSelector: '.viewer',
+			reelSelector: '.viewer .reel',
+			slidesSelector: '.viewer .reel .slide',
+			advanceDelay: 3000,
+			speed: 'slow',
+			navPreviousSelector: '.previous-button',
+			navNextSelector: '.next-button',
+			indicatorSelector: '.indicator ul li',
+			slideLinkSelector: '.link'
+		});
+	</script> 
+</div>
+<div id="page" class="container">
+	<div id="content">
+		<div id="onecolumn">
+			<h2>Location Map!</h2>
+			<p><div id="googleMap" style="width:500px;height:380px;"></div></p>
+			<p>&nbsp;</p>
+		</div>
+		<div id="two-column"></div>
+	</div>
+	<div id="sidebar"></div>
+</div>
+<div id="footer" class="container">
+	<div id="fbox1">
+		<h2>Water World</h2>
+		<ul class="style1">
+			<span class="first">Water play areas are similar to water parks and include urban beaches, splash pads, and smaller collections of water slides in many hotels and public swimming pools</span>.
+</ul>
+	</div>
+	<div id="fbox2">
+		<h2>Food Zone</h2>
+		<ul class="style1">
+			<li class="first">Food zone may be found in <a href="https://en.wikipedia.org/wiki/Shopping_mall" title="Shopping mall">shopping malls</a>, <a href="https://en.wikipedia.org/wiki/Airport" title="Airport">airports</a>, and <a href="https://en.wikipedia.org/wiki/Park" title="Park">parks</a>. In various regions (such as <a href="https://en.wikipedia.org/wiki/Asia" title="Asia">Asia</a>, the <a href="https://en.wikipedia.org/wiki/Americas" title="Americas">Americas</a>, and <a href="https://en.wikipedia.org/wiki/Africa" title="Africa">Africa</a>), it may be a standalone development.</li>
+		</ul>
+	</div>
+	<div id="fbox3">
+		<h2>Park Information</h2>
+		<p>A <strong>park</strong> is an area of natural, semi-natural, or planted space set aside for human enjoyment and recreation or for the protection of wildlife or natural habitats.</p>
+		<ul class="style2">
+		  <li><a href="#"><img src="images/social03.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social01.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social04.png" width="32" height="32" alt="" /></a></li>
+			<li><a href="#"><img src="images/social02.png" width="32" height="32" alt="" /></a></li>
+		</ul>
+	</div>
+    
+</div>
+<div id="copyright" class="container">
+	<p>2015 &copy; Water World. All rights reserved. .</p>
+</div>
+</body>
+</html>
